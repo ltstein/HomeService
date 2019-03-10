@@ -1,6 +1,15 @@
-# HomeService
-Source code and files for the Udacity Home Service Robot project
-This project depends on the following packages
+# Home Service Robot Project
+
+This repository contains code for creating a robot that can perform tasks in a home service setting. The example implementation shown here uses the example of item pickup and delivery. The end result is a robot that can navigate through a previously mapped environment to a pick up location to retrieve an item and then navigate to a delivery location to deliver that item in a simulated environment. The Home Service robot uses markers inside RVIZ to represent the real world item.
+
+## Setup
+
+1. Install dependencies
+2. Extract files and copy to catkin_ws/src
+3. Build workspace
+4. Test using included scripts
+
+### Dependencies
 
 Import these packages now and install them in the src directory of your catkin workspace. Be sure to clone the full GitHub directory and not just the package itself.
 
@@ -14,7 +23,8 @@ Import these packages now and install them in the src directory of your catkin w
 
 [turtlebot_gazebo](https://github.com/turtlebot/turtlebot_simulator): With the turtlebot_world.launch you can deploy a turtlebot in a gazebo environment by linking the world file to it.
 
-Clone the HomeService.zip, unzip it, and copy the files into your catkin_ws/src directory.
+
+### Scripts
 
 test_slam.sh - Will launch the turtlebot in the custom environment and launch a keyboard_teleop node to test the slam performance by manually driving the robot around and observing the map in RVIZ
 
